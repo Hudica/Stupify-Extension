@@ -1,5 +1,5 @@
 {
-    "name": "Stupify Extension",
+    "name": "Stupify",
     "description": "Read docs like a human",
     "version": "0.1.0",
     "manifest_version": 3,
@@ -13,7 +13,8 @@
     "background": {
         "service_worker": "stupify_worker.js"
     },
-    "permissions": ["sidePanel", "activeTab", "scripting"],
+    "permissions": ["sidePanel", "activeTab", "scripting", "storage"],
+    "host_permissions": ["https://api.groq.com/*", "<all_urls>"],
     "icons": {
         "16": "icons/icon16.png",
         "48": "icons/icon48.png",
